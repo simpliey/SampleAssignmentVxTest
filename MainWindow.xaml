@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfApp1_Assignment_Valorx.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1_Assignment_Valorx"
+        mc:Ignorable="d"
+        Title="Valorx Sample Project" 
+        Height="300" 
+        Width="400" 
+        WindowStartupLocation="CenterScreen" 
+        Icon="Sample Project Icon.png">
+    <Grid>
+        <ListBox x:Name="ItemListBox" 
+                 Margin="10,50,10,10"
+                 VerticalAlignment="Top"   
+                 HorizontalAlignment="Left"
+                 AutomationProperties.Name="ListBox" 
+                 BorderBrush="#FF080808"
+                 DisplayMemberPath="Name"/>
+        <TextBox x:Name="FiltertextBox" 
+                  Width="200" Height="30" 
+                 TextWrapping="Wrap" 
+                 Text="Enter Filter Text" 
+                 VerticalAlignment="Top" Margin="10"
+                 HorizontalAlignment="Left"
+                 BorderBrush="#FF080808" 
+                 AutomationProperties.Name="FiltertextBox" 
+                 TextChanged="FiltertextBox_TextChanged"/>
+    </Grid>
+</Window>
